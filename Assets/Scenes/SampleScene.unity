@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 1358994513}
   - component: {fileID: 1358994512}
   - component: {fileID: 1358994511}
-  - component: {fileID: 1358994510}
+  - component: {fileID: 1358994514}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -236,25 +236,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1358994510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358994509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1358994512}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: hearticon
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1358994512}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1358994511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +305,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1358994510}
+  mPreview: {fileID: 1358994514}
 --- !u!4 &1358994513
 Transform:
   m_ObjectHideFlags: 0
@@ -336,11 +317,29 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5838848192774963581}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1358994514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358994509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1358994512}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: hearticon
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1358994512}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1561361844
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,17 +453,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &5838848192774963581 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2892803456438408862, guid: e558c1705b2075242883d95e66f4b04d, type: 3}
-  m_PrefabInstance: {fileID: 8728693046696220643}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8728693046696220643
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1358994513}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2553151513043717156, guid: e558c1705b2075242883d95e66f4b04d, type: 3}
       propertyPath: m_Name
@@ -472,7 +466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2892803456438408862, guid: e558c1705b2075242883d95e66f4b04d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2892803456438408862, guid: e558c1705b2075242883d95e66f4b04d, type: 3}
       propertyPath: m_LocalPosition.x
